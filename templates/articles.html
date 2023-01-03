@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <div style='font-size: 53pt; text-align:center'>My Articles</div>
+    <div id='create-article'>
+        <img src="{% static 'pencil.png' %}" alt="" width='50px' style='padding-top: 2px'> 
+        <a href="{% url 'createarticle' %}" class='btn btn-success'>Create article</a>
+    </div>
+
+    <div class="articles">
+        
+        {% for article in articles %}
+            <a href="{% url 'detail' article.id %}">
+                <div class='article'>
+                    <div style="font-size: 32pt; text-align:center; font-family: 'Kreon', serif;"> {{ article.article_name }} </div>
+                    <div style='font-size: 12pt; text-align:center; font-style:italic;'> {{ article.article_text|safe }} </div>
+                </div>
+            </a>
+        {% endfor %}
+    </div>
+
+
+
+{% endblock %}

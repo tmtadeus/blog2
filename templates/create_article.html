@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<p style='font-size: 45pt; text-align: center;'>Create article</p>
+
+<div class='container'>
+    <form method='POST' class='create-article-form'>
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" class='btn btn-success' value='Create'>
+    </form>
+</div>
+
+{% endblock content %}

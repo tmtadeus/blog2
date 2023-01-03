@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+        <div style="font-size: 32pt; text-align:center; font-family: 'Kreon', serif; margin-top: 30px">{{ article.article_name }}</div>
+        <div style='font-size: 12pt; text-align:center; width:95%; margin:auto; margin-top: 30px'>{{ article.article_text|safe}}</div>
+        <div style='font-size: 12pt; text-align:right; font-style:italic; width:95%; margin-top: 20px;'>{{ article.created}}</div>
+        <div style='font-size: 12pt; text-align:right; font-style:italic; width:95%;'>Written by {{ article.author}}</div>
+        
+{% endblock content %}

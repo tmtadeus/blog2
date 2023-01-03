@@ -1,0 +1,83 @@
+.header {
+    height:10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url('/static/hdr-bckgrnd.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.logo {
+    margin-left: 1vh;
+}
+
+.header a {
+    text-align: left;
+    color:aliceblue;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    padding: 5px;
+    font-size: 16pt;
+    transition: 0.4s;
+}
+
+.header a:hover {
+    color: rgb(243, 240, 255);
+    transform: scale(1.05);
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    padding: 5px;
+    font-size: 16pt;
+    transition: 0.4s;
+}
+
+.logout {
+    position:relative;
+    /* margin-left: 126vh; */
+    padding: 10px
+}
+
+
+
+#create-article {
+    text-align: right;
+    margin-right: 10px;
+    position: relative;
+    bottom: 70px;
+}
+
+.container {
+    text-align: center;
+}
+
+.container .btn-success {
+    width: 300px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 15pt
+}
+
+/* ARTICLES PAGE */
+
+.article {
+    margin:auto;
+    padding:10px;
+    border: solid 2px;
+    margin-bottom: 10px;
+    width: 50%;
+    height: 50vh;
+    overflow: hidden;
+    transition: 0.4s;
+
+}
+.articles a {
+    text-decoration-line: none;
+    color:black;
+}
+
+.article:hover {
+    cursor: pointer;
+    transform: scale(1.02)
+}
